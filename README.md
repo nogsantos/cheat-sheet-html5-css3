@@ -1,4 +1,5 @@
-# Html 5 and Css 3 Advanced tips
+# Html 5 e Css 3
 
 - CSS
   - [Medidas Relativas](docs/MEDIDAS_RELATIVAS.md)
+  - [Posições](docs/POSITIONS.md)

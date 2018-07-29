@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Border radius</title>
+
+  <style type="text/css">
+    body {
+      background-color: #999;
+      position: relative;
+      font-size: 120px;
+    }
+
+    .container{
+      text-align: center;
+      position: relative;
+    }
+
+    .element {
+      background-color: #fff;
+      height: 1em;
+      width: 1em;
+    }
+
+    .border-10 {
+      border-radius: 10px;
+      position: absolute;
+    }
+
+    .border-20 {
+      border-radius: 20px;
+      position: absolute;
+      top: 1em;
+      left: 1em;
+    }
+
+    .border-50 {
+      border-radius: 50px;
+      position: absolute;
+      top: 2em;
+      left: 2em;
+    }
+
+    .border-100 {
+      border-radius: 100px;
+      position: absolute;
+      top: 3em;
+      left: 3em;
+    }
+
+    .par-border-50 {
+      border-radius: 0 50%;
+      position: absolute;
+      top: 4em;
+      left: 4em;
+    }
+
+    .par-border-10-50 {
+      border-radius: 10% 50% / 10% 50%;
+      position: absolute;
+      top: 5em;
+      left: 5em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="element border-10"></div>
+    <div class="element border-20"></div>
+    <div class="element border-50"></div>
+    <div class="element border-100"></div>
+    <div class="element par-border-50"></div>
+    <div class="element par-border-10-50"></div>
+
+  </div>
+</body>
+
+</html>
