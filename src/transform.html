@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transform</title>
+  <style type="text/css">
+    body {
+      background-color: #999;
+      position: relative;
+      font-size: 120px;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .element {
+      background-color: #fff;
+      height: 1em;
+      width: 1em;
+    }
+
+    .eye {
+      border-radius: 50% 10% / 50% 10%;
+      position: absolute;
+    }
+
+    .eye-left {
+      top: 1em;
+      left: 1em;
+      transform: rotate(50deg);
+    }
+
+    .eye-right {
+      top: 1em;
+      left: 3em;
+      transform: rotate(40deg);
+    }
+
+    .eye .pupil {
+      border-radius: 100%;
+      background-color: #000;
+      position: absolute;
+      width: .5em;
+      height: .5em;
+      top: .2em;
+      left: .2em;
+    }
+
+    .eye .pupil:hover {
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    .greeting {
+      position: absolute;
+      perspective: 3px;
+      top: 5em;
+      left: 5em;
+    }
+
+    .greeting em {
+      color: #851944;
+      font-size: .5em;
+      display: inline;
+    }
+
+    .greeting em:hover {
+      cursor: crosshair;
+      display: inline-block;
+      transform: rotate(-5deg) skew(-10deg) translateZ(2px);
+    }
+
+    .fallowme {
+      position: absolute;
+      background: #851944;
+      right: 0;
+      top: 0;
+      padding: 0.1em;
+      transform-origin: 0 0;
+      transform: translate(1em, -.8em) rotate(45deg);
+    }
+
+    .fallowme:hover {
+      cursor: pointer;
+      transform: translate(1em, -.5em) rotate(45deg);
+    }
+
+    .fallowme a {
+      font-size: .1em;
+      text-decoration: unset;
+      color: #fff;
+      font-family: "Open Sans Condensed", sans-serif;
+    }
+
+    .face {
+      display: block;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .frente {
+      background-color: magenta;
+      transform: translateZ(100px);
+    }
+
+    .direita {
+      background-color: blue;
+      transform: translateX(100px) rotateY(90deg);
+    }
+
+    .esquerda {
+      background-color: green;
+      transform: translateX(-100px) rotateY(-90deg);
+    }
+
+    .cima {
+      background-color: yellow;
+      transform: translateY(100px) rotateX(90deg);
+    }
+
+    .baixo {
+      background-color: magenta;
+      transform: translateY(-100px) rotateX(-90deg);
+    }
+
+    .tras {
+      background-color: cyan;
+      transform: translateZ(-100px) rotateY(180deg);
+    }
+
+    .cubo {
+      transform-style: preserve-3d;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: 3em;
+      left: 1em;
+      transform: rotateX(10deg) rotateY(10deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="fallowme">
+      <a target="_blank" href="https://twitter.com/nogsantos">Siga-me no twitter!</a>
+    </div>
+    <div class="element eye eye-left">
+      <div class="pupil"></div>
+    </div>
+    <div class="element eye eye-right">
+      <div class="pupil"></div>
+    </div>
+    <div class="greeting">
+      <em>Estamos de olho!</em>
+    </div>
+    <div class="cubo">
+      <div class="face frente"></div>
+      <div class="face direita"></div>
+      <div class="face esquerda"></div>
+      <div class="face cima"></div>
+      <div class="face baixo"></div>
+      <div class="face tras"></div>
+    </div>
+  </div>
+</body>
+
+</html>
