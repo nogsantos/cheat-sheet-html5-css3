@@ -1,4 +1,4 @@
-# Sobra e opacidade
+# Sombra e opacidade
 
 [<-- Voltar](../README.md)
 
@@ -6,7 +6,7 @@ Sombra e opacidade destacam os elementos ou dão efeito de iluminação e tridim
 
 [Exemplo](../src/box-shadow.html)
 
-## Sobra
+## Sombra
 
 A propriedade `text-shadow` recebe algumas configurações para dar impressão de tridimensionalidade, perspectiva, difusão de luz, além da cor da sombra.
 
