@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box shadow</title>
+  <style type="text/css">
+    body {
+      background-color: #999;
+      position: relative;
+      font-size: 30px;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .element {
+      background-color: #fff;
+      height: 5em;
+      width: 5em;
+    }
+
+    .first {
+      position: absolute;
+      top: 1em;
+      left: 10em;
+    }
+
+    .border {
+      box-shadow: .3em .3em #000;
+    }
+
+    .second {
+      position: absolute;
+      top: 10em;
+      left: 10em;
+    }
+
+    .border-orange {
+      box-shadow: .3em .3em black, -.3em -.3em orange;
+    }
+
+    .third {
+      position: absolute;
+      top: 20em;
+      left: 10em;
+    }
+
+    .border-three {
+      box-shadow: 0 0 0 4px black,
+            0 0 0 8px #999,
+            0 0 0 12px black,
+            0 0 0 16px #999,
+            0 0 0 20px black;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element first border"></div>
+        <div class="element second border-orange"></div>
+        <div class="element third border-three"></div>
+    </div>
+</body>
+</html>
