@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anima&ccedil;&otilde;es</title>
+  <style type="text/css">
+    body {
+      background-color: #999;
+      position: relative;
+      font-size: 30px;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .element {
+      background-color: #fff;
+      height: 5em;
+      width: 5em;
+      transition: box-shadow 1s;
+    }
+
+    .first {
+      position: absolute;
+      top: 1em;
+      left: 10em;
+    }
+
+    .border:hover{
+      box-shadow: .3em .3em #000;
+    }
+
+    .second {
+      position: absolute;
+      top: 10em;
+      left: 10em;
+    }
+
+    .border-orange:hover {
+      box-shadow: .3em .3em black, -.3em -.3em orange;
+    }
+
+    .third {
+      position: absolute;
+      top: 20em;
+      left: 10em;
+    }
+
+    .border-three:hover {
+      box-shadow: 0 0 0 4px black,
+            0 0 0 8px #999,
+            0 0 0 12px black,
+            0 0 0 16px #999,
+            0 0 0 20px black;
+    }
+
+    .full-rigth {
+      position: absolute;
+      top: 1em;
+      right: 5em;
+      height: 25em;
+    }
+
+    .on-start{
+      animation: show-in 3s infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes show-in{
+      0%{
+
+      }
+      100%{
+        box-shadow: 0 3em black,
+                    3em 0 gold,
+                    0 -3em green,
+                    -3em 0 orange;
+      }
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element first border"></div>
+        <div class="element second border-orange"></div>
+        <div class="element third border-three"></div>
+        <div class="element full-rigth on-start border-effect"></div>
+    </div>
+</body>
+</html>
