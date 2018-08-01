@@ -6,21 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Transform</title>
+  <link rel="stylesheet" href="./main.css">
   <style type="text/css">
-    body {
-      background-color: #999;
-      position: relative;
-      font-size: 120px;
-    }
-
-    .container {
-      position: relative;
-    }
-
     .element {
-      background-color: #fff;
-      height: 1em;
-      width: 1em;
+      background-color: #999;
+      height: 5em;
+      width: 5em;
     }
 
     .eye {
@@ -29,14 +20,14 @@
     }
 
     .eye-left {
-      top: 1em;
-      left: 1em;
+      top: 10em;
+      left: 10em;
       transform: rotate(50deg);
     }
 
     .eye-right {
-      top: 1em;
-      left: 3em;
+      top: 10em;
+      left: 30em;
       transform: rotate(40deg);
     }
 
@@ -44,10 +35,10 @@
       border-radius: 100%;
       background-color: #000;
       position: absolute;
-      width: .5em;
-      height: .5em;
-      top: .2em;
-      left: .2em;
+      width: 3em;
+      height: 3em;
+      top: 1em;
+      left: 1em;
     }
 
     .eye .pupil:hover {
@@ -58,13 +49,13 @@
     .greeting {
       position: absolute;
       perspective: 3px;
-      top: 5em;
-      left: 5em;
+      top: 20em;
+      left: 20em;
     }
 
     .greeting em {
       color: #851944;
-      font-size: .5em;
+      font-size: 3em;
       display: inline;
     }
 
@@ -77,23 +68,27 @@
     .fallowme {
       position: absolute;
       background: #851944;
-      right: 0;
-      top: 0;
-      padding: 0.1em;
+      right: -12em;
+      top: -15em;
+      height: 10em;
       transform-origin: 0 0;
-      transform: translate(1em, -.8em) rotate(45deg);
+      transform: translate(1em, 8em) rotate(45deg);
+      width: 20em;
     }
 
     .fallowme:hover {
       cursor: pointer;
-      transform: translate(1em, -.5em) rotate(45deg);
+      /* transform: translate(1em, 5em) rotate(45deg); */
     }
 
     .fallowme a {
-      font-size: .1em;
+      font-size: 1.5em;
       text-decoration: unset;
       color: #fff;
       font-family: "Open Sans Condensed", sans-serif;
+      position: absolute;
+      bottom: 1em;
+      right: 2.5em;
     }
 
     .face {
@@ -140,8 +135,8 @@
       width: 200px;
       height: 200px;
       position: relative;
-      top: 3em;
-      left: 1em;
+      top: 30em;
+      left: 10em;
       transform: rotateX(10deg) rotateY(10deg);
     }
   </style>
