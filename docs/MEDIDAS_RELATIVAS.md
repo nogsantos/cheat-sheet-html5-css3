@@ -27,7 +27,7 @@ Unidades de comprimento relativo especificam um comprimento em relação a outra
 - `vmin`: Relativo a *1%* da *janela de exibição*\*, menor dimensão
 - `vmax`: Relativo a *1%* da *janela de exibição*\*, maior dimensão
 
-> * janela de exibição = Tamanho da janela do navegador. Se a janela de visualização tiver *50cm* de largura, *1vw* = *0,5cm*.
+> \*janela de exibição = Tamanho da janela do navegador. Se a janela de visualização tiver *50cm* de largura, *1vw* = *0,5cm*.
 
 ### Exemplificação das medidas `em` e `rem`
 
