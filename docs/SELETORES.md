@@ -119,3 +119,38 @@ Quando o há um clique em um elemento
 #### checked
 
 ...
+
+## Pseudoelementos
+
+O navegador coloca pseudoelementos para resolver problemas comuns, por exemplo, resolver algo com a primeira letra dentro de um parágrafo.
+
+
+#### first-letter
+
+> Versão antiga
+```css
+p:first-letter {
+  font-size: 3em;
+}
+```
+> Css3
+```css
+p::first-letter {
+  font-size: 3em;
+}
+```
+
+#### before & after
+
+Ambos possuem uma propriedade chamada `content` em que é possível estilizar um elemento como quisermos
+
+```css
+blockquote:before {
+    content: '"';
+    font-size: 10em;
+    position: absolute;
+}
+```
+O `content` é muito poderoso. Com ele podemos trabalhar com imagens, textos, marcadores, etc, além de combiná-lo com pseudoclasses como o `:hover`.
+
+> Caso os pseudoselementos `before` e `after` não possuirem a propriedade `content`, o navegador não irá renderizá-lo

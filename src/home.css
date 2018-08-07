@@ -35,7 +35,34 @@ main > section article {
   background-size: 20px 20px;
   background-attachment: fixed;
   min-height: 15em;
+  max-width: 33%;
   margin: 1em;
+}
+
+article p {
+  margin: 0.1em;
+  position: relative;
+}
+
+article p::first-letter {
+  font-size: 5em;
+  font-weight: bold;
+  float: left;
+  padding: 0.1em;
+}
+
+article p:hover::first-letter {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+article p:hover:before {
+  content: ".";
+  font-size: 10em;
+  position: absolute;
+  float: left;
+  top: -59px;
+  left: 16px;
+  color: red;
 }
 
 footer {
