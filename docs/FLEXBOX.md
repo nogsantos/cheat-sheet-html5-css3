@@ -2,7 +2,7 @@
 
 [<-- Voltar](../README.md)
 
-O flexbox é uma dentre várias outras especificações que estão surgindo no CSS para facilitar nosso trabalho com layout e deixar o código mais simples.
+O `flexbox` é uma dentre várias outras especificações que estão surgindo no CSS para facilitar nosso trabalho com layout e deixar o código mais simples, a qual permite termos esse controle a partir de um elemento pai.
 
 [Exemplo](../src/flexbox.html)
 
