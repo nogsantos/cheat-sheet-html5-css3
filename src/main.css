@@ -10,5 +10,6 @@ body {
 }
 
 .container {
-  /* left: calc(50% - 1em); */
+  position: relative;
+  width: 100vw;
 }
