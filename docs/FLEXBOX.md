@@ -4,7 +4,9 @@
 
 O `flexbox` é uma dentre várias outras especificações que estão surgindo no CSS para facilitar nosso trabalho com layout e deixar o código mais simples, a qual permite termos esse controle a partir de um elemento pai.
 
-[Exemplo](../src/flexbox.html)
+[Exemplo 1](../src/flexbox.html)
+
+[Exemplo 2](../src/flexbox/)
 
 - `display: flex`: ativa o flexbox no elemento;
 - `align-items`: distribui verticalmente os elementos dentro de um container flex;

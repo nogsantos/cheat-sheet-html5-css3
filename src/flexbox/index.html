@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Layout</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./flexbox.css">
+</head>
+
+<body>
+
+  <header class="cabecalho-principal">
+    <div class="container">
+      <h1 class="cabecalho-principal-titulo">
+        <a href="#">Nogsantos</a>
+      </h1>
+      <nav class="cabecalho-principal-nav">
+        <a href="#" class="cabecalho-principal-nav-link">Home</a>
+        <a href="#" class="cabecalho-principal-nav-link">Cursos</a>
+        <a href="#" class="cabecalho-principal-nav-link">Sobre n&oacute;s</a>
+        <a href="#" class="cabecalho-principal-nav-link">Nosso App</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Conte&uacute;do principal</h2>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul class="rodape-principal-patrocinadores-list">
+        <li>
+          <a class="rodape-principal-patrocinadores-list-link patrocinadores-list-link-alura" href="#">
+            <img src="./img/logos/alura.svg" alt="Logo da Alura">
+          </a>
+        </li>
+        <li>
+          <a class="rodape-principal-patrocinadores-list-link patrocinadores-list-link-caelum" href="#">
+            <img src="./img/logos/caelum.svg" alt="Logo da Caelum">
+          </a>
+        </li>
+        <li>
+          <a class="rodape-principal-patrocinadores-list-link patrocinadores-list-link-casaDoCodigo" href="#">
+            <img src="./img/logos/cdc.svg" alt="Logo da Casa do Código">
+          </a>
+        </li>
+      </ul>
+      <form class="rodape-principal-contato-form" action="#">
+        <fieldset>
+          <legend class="rodape-principal-contato-form-legend" for="email-contato">Entre em contato conosco</legend>
+          <div class="rodape-principal-contato-form-fieldset">
+            <input class="rodape-principal-contato-form-emailInput" type="email" name="email-contato" id="email-contato">
+            <button class="rodape-principal-contato-form-submit" type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</body>
+
+</html>
