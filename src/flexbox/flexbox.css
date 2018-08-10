@@ -4,6 +4,13 @@
   justify-content: space-between;
 }
 
+section.map .map-nav-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 18.5em;
+  padding-bottom: 1em;
+}
+
 footer .container {
   display: flex;
   align-items: center;

@@ -4,9 +4,12 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.8);
-  font-size: 14px;
+  background-image: linear-gradient(135deg, #111 10%, #222 100%);
+  font-size: 100%;
+  width: 100vw;
+  height: 100vh;
   color: yellowgreen;
+  text-shadow: 1px 1px 1px #111;
   font-family: monospace;
 }
 
@@ -61,6 +64,7 @@ h6 {
 }
 
 .cabecalho-principal-nav {
+  text-shadow: none;
 }
 
 .cabecalho-principal-nav-link {
@@ -132,4 +136,63 @@ footer .container {
   border: 1px solid #4dba7a;
   box-sizing: border-box;
   font-size: 16px;
+}
+
+section.map {
+  background-color: rgba(87, 106, 83, 0.9);
+}
+
+section.map .subtitulo{
+  padding-top: 1em;
+}
+
+.map-list-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: 0.9em 0;
+  padding-left: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.map-nav-link {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+  background-image: linear-gradient(90deg, #ffffff, transparent);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size .5s,
+              color .5s;
+  padding: .3em;
+  margin: .1em;
+}
+
+.map-nav-link:hover {
+  background-size: 100% 100%;
+  color: rgba(87, 106, 83, 0.9);
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.map-list-title + .map-nav-link {
+  margin-top: 0;
+}
+
+.map-list-title-bancoDeDados {
+  color: #ec6e5a;
+  border-left: 4px solid #ec6e5a;
+}
+.map-list-title-framework {
+  color: #ad85bf;
+  border-left: 4px solid #ad85bf;
+}
+.map-list-title-frontend {
+  color: #5ec6f3;
+  border-left: 4px solid #5ec6f3;
+}
+.map-list-title-backend {
+  color: #25d285;
+  border-left: 4px solid #25d285;
 }
